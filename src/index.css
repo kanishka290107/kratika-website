@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Syne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --color-biotech-navy: #070D18;
+  --color-biotech-surface: #0E1726;
+  --color-biotech-card: #131F33;
+  --color-biotech-border: #1E2E48;
+  --color-biotech-teal: #0D9488;
+  --color-biotech-cyan: #06B6D4;
+  --color-biotech-emerald: #10B981;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #070D18;
+  color: #F1F5F9;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-heading {
+  font-family: var(--font-display);
+}
+
+/* Custom subtle glass and grid effects */
+.scientific-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(20, 184, 166, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(20, 184, 166, 0.04) 1px, transparent 1px);
+}
+
+.scientific-radial {
+  background: radial-gradient(circle at 50% 20%, rgba(13, 148, 136, 0.12) 0%, rgba(6, 182, 212, 0.04) 40%, transparent 70%);
+}
+
+/* Smooth custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #070D18;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E2E48;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0D9488;
+}
